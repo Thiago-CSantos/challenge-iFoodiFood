@@ -11,7 +11,7 @@ public class MongoDBConfig {
 
     @Bean
     public MongoDatabaseFactory mongoConfigure(){
-        return new SimpleMongoClientDatabaseFactory("mongodb://mongo:27017/product-catalog");
+        return new SimpleMongoClientDatabaseFactory("mongodb://host.minikube.internal:27017/product-catalog");
     }
 
     @Bean
